@@ -1,1 +1,0 @@
-r = requests.get('https://api.telegram.org/bot175799527:AAGzAhBPZvjrG7nqvKHmtA07Cjw8GyrwP68/getUpdates?offset=226658250')
