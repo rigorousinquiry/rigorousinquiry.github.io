@@ -9,6 +9,7 @@ an open-source style blog
   - a date
   - a category (style, beauty, or life)
   - a color, in hex	
+  - tags
 
 * Put your photos in `img/YYYY-MM-DD`. Be sure to include:
   - a short, wide photo with the title `00-featurecover.jpg`
