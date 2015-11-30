@@ -4,6 +4,9 @@
 .site-header {
     min-height: 56px;
 
+    .wrapper{
+        background-color: black;
+    }
     // Positioning context for the mobile navigation icon
     position: relative;
 }
@@ -18,11 +21,17 @@
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: white;
     }
+}
+.bottom-border {
+    height: $spacing-unit;
+    width: 100%;
+    background-color: #b0340e;
 }
 
 .site-nav {
+
     float: right;
     line-height: 56px;
     font-family:$accent-font-family;
@@ -32,9 +41,9 @@
     }
 
     .page-link {
-        color: $text-color;
+        color: white;
         line-height: $base-line-height;
-
+        font-family: $accent-font-family;
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
             margin-left: 20px;
@@ -168,123 +177,13 @@
     font-size: 20px;
 }
 
-.post-grid {
-    width: auto;
-    margin-right: 50px;
-    margin-bottom: $spacing-unit;
-    padding-left: 10px;
-    border-left: 5px solid $grey-color;
-    border-top: 5px solid $background-color;
-    border-bottom: 5px solid $background-color;
-
-    .boxes-container{
-        position:relative;
-        width: auto;
-    }
-
-    .post-link-box {
-        width: 200px;
-        height: 200px;
-        margin: 0px;
-        display: inline-block;
-        vertical-align: bottom;
-        overflow: none;
-        position: relative;
-
-            .post-link-content{
-                border: 5px solid $background-color;
-                position: absolute;
-                top: 0px;
-                left: 0;
-                right: 0;
-                bottom: 0;
-
-                .arrow{
-                    background-color:  $background-color;
-                }
-            }
-
-
-    }
-
-    .post-meta{
-        position: absolute;
-        top: 10px;
-        left: 10px;
-
-    }
-
-}
-
-.post-meta {
-    font-size: $small-font-size;
-    color: $grey-color-dark;
-}
-
-.post-link {
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-}
-
-.post-link:hover, .post-link:focus, .post-link:active{
-
-}
-
-.post-link-title {
-    font-size: 24px;
-    color: $grey-color-dark;
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    max-width: 80%;
-}
-
-.more-posts{
-    font-size: 24px;
-    color: $grey-color-dark;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    max-width: 80%;
-}
-
-
-/* THIS IS SO HACKY*/
-.background-post-img {
-    position: absolute;
-    top:0px;
-    bottom:0px;
-    left:0px;
-    right:0px;
-    -webkit-filter: grayscale(100%) contrast(100%) blur(2px);
-    filter: grayscale(100%) contrast(100%) blur(2px);
-    box-sizing: border-box;
-    z-index: -1;
-    height: 100%;
-
-    -o-transition:1s;
-    -ms-transition:1s;
-    -moz-transition:1s;
-    -webkit-transition:1s;
-    transition:1s;
-}
-
-.background-post-img.blank {
-    background-color: $grey-color;
-}
-
-.background-post-img:hover{
-
-}
 
 /**
  * Posts
  */
 .post-header {
     margin-bottom: $spacing-unit;
+    text-align: center;
 }
 
 .post-title {
@@ -323,4 +222,68 @@
             font-size: 18px;
         }
     }
+}
+
+
+/**
+ * Homepage
+ */
+
+.site-title-main {
+    font-family:$accent-font-family;
+    font-size: 50px;
+    line-height: 56px;
+    letter-spacing: -1px;
+    margin-top: $spacing-unit;
+    margin-bottom: -webkit-calc((#{$spacing-unit} / 2));
+    margin-bottom: calc((#{$spacing-unit} / 2));
+    text-align: center;
+    width: 100%;
+    display: block;
+
+    &,
+    &:visited {
+        color: black;
+    }
+}
+
+.feature-box{
+    margin-bottom: $spacing-unit;
+}
+
+.category-title{
+    font-family: $accent-font-family;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: $spacing-unit;
+}
+
+.category-posts{
+    padding: $spacing-unit
+}
+
+.post-list{
+    margin-top: $spacing-unit;
+
+    margin-left: -webkit-calc((#{$spacing-unit} / 2));
+    margin-left: calc((#{$spacing-unit} / 2));
+}
+
+.over-image{
+    position: absolute;
+    color: white;
+
+    bottom: -webkit-calc((#{$spacing-unit} / 2));
+    bottom:         calc((#{$spacing-unit} / 2));
+    left: -webkit-calc((#{$spacing-unit} / 2));
+    left:         calc((#{$spacing-unit} / 2));
+
+    a{
+        color: white;
+    }
+}
+
+.feature-title h3, h2{
+    margin-bottom: 0;
 }

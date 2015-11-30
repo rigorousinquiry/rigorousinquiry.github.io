@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "We desperately need more content"
+subtitle: "subtitle"
 date:   2015-10-24
 categories: unboxings
 coverphoto: true

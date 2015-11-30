@@ -11,7 +11,7 @@ $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$accent-font-family: 'Josefin Sans', sans-serif;
+$accent-font-family: 'League-Spartan', sans-serif;
 
 $spacing-unit:     30px;
 
@@ -47,5 +47,11 @@ $on-laptop:        800px;
 @import
         "base",
         "layout",
+        "index",
         "syntax-highlighting"
 ;
+
+@font-face{
+    font-family: "League-Spartan";
+    src: url("/img/assets/LeagueSpartan-Bold.otf");
+}

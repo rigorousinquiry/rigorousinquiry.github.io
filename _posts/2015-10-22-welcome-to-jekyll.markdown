@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "hello world"
+subtitle: "subtitle"
 date:   2015-10-25
 categories: unboxings
 coverphoto: true

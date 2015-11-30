@@ -1,50 +1,52 @@
 ---
-layout: default
+layout: main
 ---
 
 <div class="home">
-  {% for category in site.categories %}
 
-    <div class="post-grid">
+  {% assign post = site.posts.first %}
+  <div class="image-container feature-box">
+    <a class="image-link image-overlay" href="{{ post.url | prepend: site.baseurl }}"></a>
 
-      <div class="boxes-container">
+    <img src="/img/{{post.date | date: "%Y-%m-%d"}}/00-featurecover.jpg" class="feature-cover transition-slow">
+    <div class="image-overlay bottom-gradient"></div>
+    <div class="over-image transition-slow">
+      <a class="feature-title" href="{{ post.url | prepend: site.baseurl }}"> <h2>{{ post.title | upcase }}</h2> </a>
+      <div class="feature-subtitle">{{ post.subtitle | downcase }}</div>
+    </div>
 
-          {% for post in category[1] limit: 5%}
-            <div class="post-link-box hvr-grow">
-              <div class="white-overlay "></div>
-              <div class="post-link-content">
-                {% if post.coverphoto %}
-                <img src="/img/{{post.date | date: "%Y-%m-%d"}}/0-cover.jpg" class="background-post-img">
-                {% else %}
-                <div class="background-post-img blank"></div>
-                {% endif %}
+  </div>
+  <div class="grid posts">
+    {% for category in site.categories %}
+    <div class="col-1-3 category-posts">
+      <div class="category-title transition-slow">
+        {{ category[0] | upcase}}
+      </div>
 
-                <!-- <span class="post-meta rel">{{ post.date | date: "%m-%d-%Y" }}</span> -->
+        {% assign post = category[1][0] %}
+          <div class="image-container ">
+            <a class="image-link image-overlay" href="{{ post.url | prepend: site.baseurl }}"></a>
 
-                    <h2>
-                        <div class="post-link-title transition">
-                          {{ post.title | downcase }}
-                        </div>
-                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"></a>
+            <img src="/img/{{post.date | date: "%Y-%m-%d"}}/0-cover.jpg" class="desaturate transition-slow">
+            <div class="image-overlay bottom-gradient"></div>
 
-                    </h2>
-
-              </div>
+            <div class="over-image transition-slow">
+              <a class="feature-title transition" href="{{ post.url | prepend: site.baseurl }}"> <h2>{{ post.title | upcase }}</h2> </a>
+              <div class="feature-subtitle">{{ post.subtitle | downcase }}</div>
             </div>
-          {% endfor %}
-            <div class="post-link-box arrow-box">
-              <div class="post-link-content arrow hvr-bob">
-                <div class="more-posts transition">
-                  more 
-                  <br> {{category[0]}}
-                  <br>&rarr;
-                </div>        
-              </div>
-            </div>
+
           </div>
-
+        {{firstpost.title | upcase}}
+        
+      {% for post in category[1] limit: 3 offset: 1%}
+        <div class="post-list hvr-grow transition-slow">
+          <a class="feature-title " href="{{ post.url | prepend: site.baseurl }}"> <h3>{{ post.title | upcase }}</h3> </a>
+          <div class="feature-subtitle">{{ post.subtitle | downcase }}</div>
         </div>
-        {% endfor %}
+      {% endfor %}
+    </div>
+    {% endfor %}
 
+  </div>
 
 </div>

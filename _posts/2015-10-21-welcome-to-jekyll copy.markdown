@@ -1,26 +1,15 @@
 ---
 layout: post
-title:  "the arrivals unboxing"
-date:   2015-10-21
+title:  "the arrivals"
+subtitle: "an unboxing"
+date:   2015-10-27
 categories: reviews
 coverphoto: true
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve --watch`, which launches a web server and auto-regenerates your site when a file is updated.
+So something I’ve realized lately is people hate unboxings. Some people really hate unboxings. They think it’s vapid and pointless and overly consumeristic.
+I don’t care though, because this packaging is pretty damn great.  Besides, if I’m dropping a significant amount of my paltry income, the extra details like the packaging are greatly appreciated. They say that experiential spending is more satisfying than material consumption, and why should the experience of unboxing a new jacket be unimportant?
+Okay, maybe that’s a little much, but it was definitely a treat to open this package.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
-
-[jekyll]:      http://jekyllrb.com
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-help]: https://github.com/jekyll/jekyll-help
+The Arrivals is a small, very new label comprised of industry outsiders—a former Architect and an entrepreneur who pride themselves on bucking the industry status quo. I don’t quite know about that – and I probably haven’t made enough big purchases to really have a good point of reference – but they definitely show the attention to detail and extra touches you’d expect from a very small, upper-middle end brand.
+I’ve got to say though, for a brand with such minimal designs, and almost always in muted colors, I wasn’t expecting the bright orange box. In line with their ethos as “something different”, I guess. 
+They like to advertise themselves as “your next favorite outerwear piece”, and, on that front, we’ll have to see. (Look out for a review in the near future.) But in the meantime, let the commodity fetishism wash over you and take a look at some honestly very nice packaging. Everything from the handwritten note to the complementary tote definitely eased the pain of my dropping bank account balance.
