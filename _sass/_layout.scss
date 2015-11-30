@@ -278,6 +278,8 @@
     bottom:         calc((#{$spacing-unit} / 2));
     left: -webkit-calc((#{$spacing-unit} / 2));
     left:         calc((#{$spacing-unit} / 2));
+    right: -webkit-calc((#{$spacing-unit} / 2));
+    right:         calc((#{$spacing-unit} / 2));
 
     a{
         color: white;
