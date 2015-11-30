@@ -17,7 +17,9 @@ layout: main
   <div class="image-container feature-box">
     <a class="image-link image-overlay" href="{{ post.url | prepend: site.baseurl }}"></a>
 
-    <img src="/img/{{post.date | date: "%Y-%m-%d"}}/00-featurecover.jpg" class="feature-cover transition-slow">
+    <img src="/img/{{post.date | date: "%Y-%m-%d"}}/00-featurecover.jpg" class="feature-cover transition-slow largescreen-image">
+    <img src="/img/{{post.date | date: "%Y-%m-%d"}}/0-cover.jpg" class="feature-cover transition-slow smallscreen-image">
+
     <div class="image-overlay bottom-gradient"></div>
     <div class="over-image transition-slow">
       <a class="feature-title large" href="{{ post.url | prepend: site.baseurl }}"> <h2>{{ post.title | upcase }}</h2> </a>

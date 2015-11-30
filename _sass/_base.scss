@@ -228,6 +228,22 @@ filter: grayscale(100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+.largescreen-image{
+  display: block;
+
+  @include media-query($on-palm){
+    display: none;
+  }
+}
+
+.smallscreen-image{
+  display: none;
+
+  @include media-query($on-palm){
+    display: block;
+  }
+}
+
 /**
  * Icons
  */
