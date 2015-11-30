@@ -2,16 +2,25 @@
 layout: main
 ---
 
+  {% assign post = site.posts.first %}
+
+  <div class="site-header-main">
+
+      <a class="site-title-main hvr-space transition-slow" href="{{ site.baseurl }}/">{{ site.title | upcase}}</a>
+
+      <div class="bottom-border" style="background-color: #{{ post.color }}"></div>
+
+  </div>
+
 <div class="home">
 
-  {% assign post = site.posts.first %}
   <div class="image-container feature-box">
     <a class="image-link image-overlay" href="{{ post.url | prepend: site.baseurl }}"></a>
 
     <img src="/img/{{post.date | date: "%Y-%m-%d"}}/00-featurecover.jpg" class="feature-cover transition-slow">
     <div class="image-overlay bottom-gradient"></div>
     <div class="over-image transition-slow">
-      <a class="feature-title" href="{{ post.url | prepend: site.baseurl }}"> <h2>{{ post.title | upcase }}</h2> </a>
+      <a class="feature-title large" href="{{ post.url | prepend: site.baseurl }}"> <h2>{{ post.title | upcase }}</h2> </a>
       <div class="feature-subtitle">{{ post.subtitle | downcase }}</div>
     </div>
 

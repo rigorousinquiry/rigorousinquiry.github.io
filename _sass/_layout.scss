@@ -234,7 +234,6 @@
     font-size: 50px;
     line-height: 56px;
     letter-spacing: -1px;
-    margin-top: $spacing-unit;
     margin-bottom: -webkit-calc((#{$spacing-unit} / 2));
     margin-bottom: calc((#{$spacing-unit} / 2));
     text-align: center;
@@ -245,6 +244,10 @@
     &:visited {
         color: black;
     }
+}
+
+.site-header-main{
+    margin-bottom: $spacing-unit;
 }
 
 .feature-box{
@@ -288,4 +291,10 @@
 
 .feature-title h3, h2{
     margin-bottom: 0;
+
+}
+
+
+.large{
+    font-size: 30px;
 }
