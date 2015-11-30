@@ -1,5 +1,5 @@
 # Rigorous Inquiry 
-## an open-source style blog
+an open-source style blog
 
 
 ### Submission Instructions
