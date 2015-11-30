@@ -6,4 +6,5 @@ date:   2015-11-30
 categories: beauty
 coverphoto: true
 color: "fc9d97"
+author: Catherine
 ---

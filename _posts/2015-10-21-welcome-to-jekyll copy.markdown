@@ -1,11 +1,12 @@
 ---
 layout: post
-title:  "the arrivals"
-subtitle: "an unboxing"
+title:  "the arrivals pt. 1"
+subtitle: "the unboxing"
 date: 2015-12-01
-categories: reviews
+categories: style
 coverphoto: true
 color: b0340e
+author: Jason
 ---
 So something I’ve realized lately is people hate unboxings. Some people really hate unboxings. They think it’s vapid and pointless and overly consumeristic.
 I don’t care though, because this packaging is pretty damn great.  Besides, if I’m dropping a significant amount of my paltry income, the extra details like the packaging are greatly appreciated. They say that experiential spending is more satisfying than material consumption, and why should the experience of unboxing a new jacket be unimportant?
