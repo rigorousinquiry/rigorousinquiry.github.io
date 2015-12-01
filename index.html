@@ -14,7 +14,7 @@ layout: main
 
 <div class="home">
 
-  <div class="image-container feature-box">
+  <div class="image-container feature-box fadein-1">
     <a class="image-link image-overlay" href="{{ post.url | prepend: site.baseurl }}"></a>
 
     <img src="/img/{{post.date | date: "%Y-%m-%d"}}/00-featurecover.jpg" class="feature-cover transition-slow largescreen-image">
@@ -30,12 +30,12 @@ layout: main
   <div class="grid posts">
     {% for category in site.categories %}
     <div class="col-1-3 category-posts">
-      <div class="category-title transition-slow">
+      <div class="category-title transition-slow fadein-1">
         {{ category[0] | upcase}}
       </div>
 
         {% assign post = category[1][0] %}
-          <div class="image-container ">
+          <div class="image-container fadein-1 ">
             <a class="image-link image-overlay" href="{{ post.url | prepend: site.baseurl }}"></a>
 
             <img src="/img/{{post.date | date: "%Y-%m-%d"}}/0-cover.jpg" class="desaturate transition-slow">
@@ -50,7 +50,7 @@ layout: main
         {{firstpost.title | upcase}}
         
       {% for post in category[1] limit: 3 offset: 1%}
-        <div class="post-list hvr-grow transition-slow">
+        <div class="post-list hvr-grow transition-slow fadein-1">
           <a class="feature-title " href="{{ post.url | prepend: site.baseurl }}"> <h3>{{ post.title | upcase }}</h3> </a>
           <div class="feature-subtitle">{{ post.subtitle | downcase }}</div>
         </div>
