@@ -2,7 +2,7 @@
 layout: post
 title:  "the arrivals pt. 1"
 subtitle: "the unboxing"
-date: 2015-10-21
+date: 2015-12-01
 categories: style
 coverphoto: true
 color: b0340e
