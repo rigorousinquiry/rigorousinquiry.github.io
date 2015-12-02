@@ -2,7 +2,7 @@
 layout: post
 title:  "The Arrivals Pt. 2"
 subtitle: "the review"
-date:   2015-12-2
+date:   2015-12-02
 categories: style
 coverphoto: true
 color: "b0340e"
