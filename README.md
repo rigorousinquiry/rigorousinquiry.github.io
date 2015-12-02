@@ -16,6 +16,8 @@ an open-source style blog
   - a square photo with the title `0-cover.jpg`
   - any other photos you would like to be included with your post
 
+*Consider [optimizing your photos for web](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization?hl=en#optimizing-raster-images)--especially cover photos.*
+
 See existing posts for examples. 
 
 There cannot be more than one post per day. If someone has already submitted a post for today, wait until tomorrow.
