@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title:  "The Arrivals Pt. 2"
 subtitle: "the review"
