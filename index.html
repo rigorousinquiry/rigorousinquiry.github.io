@@ -2,62 +2,10 @@
 layout: main
 ---
 
-  {% assign post = site.posts.first %}
 
   <div class="site-header-main">
 
-      <a class="site-title-main hvr-space transition-slow" href="{{ site.baseurl }}/">{{ site.title | upcase}}</a>
+  <div class="site-title" style="color:black; font-size: 30vh; line-height: 30vh; width: 100%; text-align:center; margin-top: 20vw;">?</div>
 
-      <div class="bottom-border" style="background-color: #{{ post.color }}"></div>
-
-  </div>
-
-<div class="home">
-
-  <div class="image-container feature-box fadein-1">
-    <a class="image-link image-overlay" href="{{ post.url | prepend: site.baseurl }}"></a>
-
-    <img src="/img/{{post.date | date: "%Y-%m-%d"}}/00-featurecover.jpg" class="feature-cover transition-slow largescreen-image">
-    <img src="/img/{{post.date | date: "%Y-%m-%d"}}/0-cover.jpg" class="feature-cover transition-slow smallscreen-image">
-
-    <div class="image-overlay bottom-gradient"></div>
-    <div class="over-image transition-slow">
-      <a class="feature-title large" href="{{ post.url | prepend: site.baseurl }}"> <h2>{{ post.title | upcase }}</h2> </a>
-      <div class="feature-subtitle">{{ post.subtitle | downcase }}</div>
-    </div>
-
-  </div>
-  <div class="grid posts">
-    {% for category in site.categories %}
-    <div class="col-1-3 category-posts">
-      <div class="category-title transition-slow fadein-1">
-        {{ category[0] | upcase}}
-      </div>
-
-        {% assign post = category[1][0] %}
-          <div class="image-container fadein-1 ">
-            <a class="image-link image-overlay" href="{{ post.url | prepend: site.baseurl }}"></a>
-
-            <img src="/img/{{post.date | date: "%Y-%m-%d"}}/0-cover.jpg" class="desaturate transition-slow">
-            <div class="image-overlay bottom-gradient"></div>
-
-            <div class="over-image transition-slow">
-              <a class="feature-title transition" href="{{ post.url | prepend: site.baseurl }}"> <h2>{{ post.title | upcase }}</h2> </a>
-              <div class="feature-subtitle">{{ post.subtitle | downcase }}</div>
-            </div>
-
-          </div>
-        {{firstpost.title | upcase}}
-        
-      {% for post in category[1] limit: 3 offset: 1%}
-        <div class="post-list hvr-grow transition-slow fadein-1">
-          <a class="feature-title " href="{{ post.url | prepend: site.baseurl }}"> <h3>{{ post.title | upcase }}</h3> </a>
-          <div class="feature-subtitle">{{ post.subtitle | downcase }}</div>
-        </div>
-      {% endfor %}
-    </div>
-    {% endfor %}
-
-  </div>
-
+  <div style="font-style:italic; width: 100%; text-align:center;">launching soon.</div>
 </div>
