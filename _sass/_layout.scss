@@ -9,6 +9,13 @@
     }
     // Positioning context for the mobile navigation icon
     position: relative;
+
+    @include media-query($on-palm) {
+        .site-title{
+            font-size: 20px;
+        }
+    }
+
 }
 
 .site-title {
@@ -76,6 +83,7 @@
                 }
             }
         }
+
 
         .trigger {
             clear: both;
