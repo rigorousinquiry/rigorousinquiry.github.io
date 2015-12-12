@@ -1,7 +1,7 @@
 # Site settings
 title: rigorous inquiry
 email: rigorousinquiry@gmail.com
-description: 
+description: An open-source style blog.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: rigorousinquiry
