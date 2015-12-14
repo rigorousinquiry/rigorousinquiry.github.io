@@ -32,7 +32,8 @@
     }
 }
 .bottom-border {
-    height: $spacing-unit;
+    height: $spacing-unit/2;
+    margin-bottom: $spacing-unit/2;
     width: 100%;
     background-color: #b0340e;
 }
@@ -254,7 +255,7 @@
 }
 
 .site-header-main{
-    margin-bottom: $spacing-unit;
+    margin-bottom: $spacing-unit/2;
 }
 
 .feature-box{
@@ -266,11 +267,15 @@
     font-size: 30px;
     width: 100%;
     text-align: center;
-    margin-bottom: $spacing-unit;
+    margin-bottom: $spacing-unit/2;
 }
 
 .category-posts{
-    padding: $spacing-unit
+    padding: $spacing-unit;
+
+    > .image-container{
+        margin-bottom: $spacing-unit/2;
+    }
 }
 
 .post-list{
@@ -279,6 +284,13 @@
 /*    margin-left: -webkit-calc((#{$spacing-unit} / 2));
     margin-left: calc((#{$spacing-unit} / 2));*/
 }
+
+
+.category-border{
+    opacity: 0;
+    margin-bottom: 0;
+}
+
 
 .over-image{
     position: absolute;

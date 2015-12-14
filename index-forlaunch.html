@@ -12,18 +12,17 @@ layout: main
 
   </div>
 
-<div class="home">
+<div class="home fadein-delay">
 
-  <div class="image-container feature-box fadein-1">
+  <div class="image-container feature-box">
     <a class="image-link image-overlay" href="{{ post.url | prepend: site.baseurl }}"></a>
-
     <img src="/img/{{post.date | date: "%Y-%m-%d"}}/00-featurecover.jpg" class="feature-cover transition-slow largescreen-image">
-    <img src="/img/{{post.date | date: "%Y-%m-%d"}}/0-cover.jpg" class="feature-cover transition-slow smallscreen-image">
+<!--     <img src="/img/{{post.date | date: "%Y-%m-%d"}}/0-cover.jpg" class="feature-cover transition-slow smallscreen-image"> -->
 
     <div class="image-overlay bottom-gradient"></div>
     <div class="over-image transition-slow">
       <a class="feature-title large" href="{{ post.url | prepend: site.baseurl }}"> <h2>{{ post.title | upcase }}</h2> </a>
-      <div class="feature-subtitle">{{ post.subtitle | downcase }}</div>
+      <div class="feature-subtitle fadein-delay">{{ post.subtitle | downcase }}</div>
     </div>
 
   </div>
@@ -34,26 +33,31 @@ layout: main
         {{ category[0] | upcase}}
       </div>
 
-        {% assign post = category[1][0] %}
-          <div class="image-container fadein-1 ">
-            <a class="image-link image-overlay" href="{{ post.url | prepend: site.baseurl }}"></a>
+        {% for post in category[1] %}
+          <div class="image-container">
+            <div class="bottom-border category-border on-hover transition-slow" style="background-color: #{{ post.color }}; "></div>    
 
-            <img src="/img/{{post.date | date: "%Y-%m-%d"}}/0-cover.jpg" class="desaturate transition-slow">
-            <div class="image-overlay bottom-gradient"></div>
+            <div class="image-container fadein-1 ">
 
-            <div class="over-image transition-slow">
-              <a class="feature-title transition" href="{{ post.url | prepend: site.baseurl }}"> <h2>{{ post.title | upcase }}</h2> </a>
-              <div class="feature-subtitle">{{ post.subtitle | downcase }}</div>
-            </div>
+              <a class="image-link image-overlay" href="{{ post.url | prepend: site.baseurl }}"></a>
 
+              <img src="/img/{{post.date | date: "%Y-%m-%d"}}/0-cover.jpg" class="desaturate transition-slow grow">
+              <div class="image-overlay bottom-gradient"></div>
+
+              <div class="over-image transition-slow">
+                <a class="feature-title transition" href="{{ post.url | prepend: site.baseurl }}"> <h2>{{ post.title | upcase }}</h2> </a>
+                <div class="feature-subtitle">{{ post.subtitle | downcase }}</div>
+              </div>
+           </div>
           </div>
+
         {{firstpost.title | upcase}}
         
-      {% for post in category[1] limit: 3 offset: 1%}
-        <div class="post-list hvr-grow transition-slow fadein-1">
+
+<!--         <div class="post-list hvr-grow transition-slow fadein-1">
           <a class="feature-title " href="{{ post.url | prepend: site.baseurl }}"> <h3>{{ post.title | upcase }}</h3> </a>
           <div class="feature-subtitle">{{ post.subtitle | downcase }}</div>
-        </div>
+        </div> -->
       {% endfor %}
     </div>
     {% endfor %}

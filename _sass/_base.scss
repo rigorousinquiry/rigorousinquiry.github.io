@@ -205,14 +205,18 @@ filter: grayscale(100%);
   z-index: 1;
 }
 
-.image-link:hover ~  img{
+.image-container:hover img.grow{
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
 
 .image-link:hover ~ img.desaturate{
-/*  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);*/
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.image-container:hover .bottom-border{
+  opacity: 1;
 }
 
 .image-container{
@@ -378,7 +382,14 @@ filter: grayscale(100%);
             animation: fadein 1s;
 }
 
-
+.fadein-delay {
+    animation-delay: 2s;
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
+}
 
 @keyframes fadein {
     from { opacity: 0; }
