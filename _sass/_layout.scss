@@ -3,6 +3,7 @@
  */
 .site-header {
     min-height: 56px;
+    background-color: black;
 
     .wrapper{
         background-color: black;
@@ -32,7 +33,8 @@
     }
 }
 .bottom-border {
-    height: $spacing-unit;
+    height: $spacing-unit/2;
+    margin-bottom: $spacing-unit/2;
     width: 100%;
     background-color: #b0340e;
 }
@@ -50,7 +52,7 @@
     .page-link {
         color: white;
         line-height: $base-line-height;
-        font-family: $accent-font-family;
+        font-family: $base-font-family;
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
             margin-left: 20px;
@@ -191,6 +193,10 @@
 .post-header {
     margin-bottom: $spacing-unit;
     text-align: center;
+
+    img {
+        margin-bottom: $spacing-unit;
+    }
 }
 
 .post-title {
@@ -202,6 +208,7 @@
         font-size: 36px;
     }
 }
+
 
 .post-content {
     margin-bottom: $spacing-unit;
@@ -254,7 +261,7 @@
 }
 
 .site-header-main{
-    margin-bottom: $spacing-unit;
+    margin-bottom: $spacing-unit/2;
 }
 
 .feature-box{
@@ -266,19 +273,75 @@
     font-size: 30px;
     width: 100%;
     text-align: center;
-    margin-bottom: $spacing-unit;
+    margin-bottom: $spacing-unit/2;
 }
 
 .category-posts{
-    padding: $spacing-unit
+    width: 33.3%;
+    padding: $spacing-unit;
+    float: none;
+    display: table-cell;
+    margin-bottom: $spacing-unit/2;
+    box-sizing: border-box;
+    position: relative;
+
+    > .image-container{
+        margin-bottom: $spacing-unit/2;
+        min-height: 180px;
+
+        img{
+            object-fit: cover;
+            min-height: 180px;
+            min-width: 100%;
+        }
+    }
+
+    @include media-query($on-laptop){
+        float: left;
+        width: 100%;
+    }
+
+    @include media-query($on-palm){
+        float: left;
+        width: 100%;
+    }
+
 }
 
+.category-column-bg{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+    background: #f2f1ef;
+    box-shadow: 0 4px 6px -6px black;
+
+    z-index: -100;
+}
+
+.posts{
+    float: none;
+    display: table;
+}
 .post-list{
     margin-top: $spacing-unit;
 
 /*    margin-left: -webkit-calc((#{$spacing-unit} / 2));
     margin-left: calc((#{$spacing-unit} / 2));*/
 }
+
+.post-meta{
+    color: $grey-color;
+}
+
+.category-border{
+    opacity: 0;
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 0;
+}
+
 
 .over-image{
     position: absolute;
@@ -294,6 +357,11 @@
     a{
         color: white;
     }
+
+    .post-meta{
+        color: white;
+        opacity: .6;
+    }
 }
 
 .feature-title h3, h2{
@@ -304,4 +372,8 @@
 
 .large{
     font-size: 30px;
+}
+
+.subtle-shadow{
+    box-shadow: 0 2px 5px -4px black;
 }

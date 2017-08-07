@@ -1,9 +1,10 @@
 ---
 layout: default
 ---
-<div class="post">
+<div class="post fadein-1">
 
   <header class="post-header">
+  	<img src="/img/{{page.date | date: "%Y-%m-%d"}}/00-featurecover.jpg">
     <h1 class="post-title">{{ page.title | upcase}}</h1>
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   </header>

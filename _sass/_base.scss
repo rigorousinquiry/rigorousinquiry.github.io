@@ -43,6 +43,7 @@ ul, ol, dl, figure,
 img {
     max-width: 100%;
     vertical-align: middle;
+    box-shadow: 0 4px 4px -4px black;
 }
 
 
@@ -84,6 +85,9 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $accent-font-family;
 }
 
+h2 {
+  font-size: 1.4em;
+}
 
 
 /**
@@ -157,6 +161,7 @@ pre {
 .wrapper {
     max-width: -webkit-calc(70% - (#{$spacing-unit} * 2));
     max-width:         calc(70% - (#{$spacing-unit} * 2));
+    min-width: 800px;
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;
@@ -166,8 +171,13 @@ pre {
     @include media-query($on-laptop) {
         max-width: -webkit-calc(800px - (#{$spacing-unit}));
         max-width:         calc(800px - (#{$spacing-unit}));
+        min-width: 0px;
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
+    }
+
+    @include media-query($on-palm) {
+      min-width: 0px;
     }
 }
 
@@ -205,14 +215,18 @@ filter: grayscale(100%);
   z-index: 1;
 }
 
-.image-link:hover ~  img{
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
+.image-link:hover ~ img{
+  -webkit-transform: scale(1.025);
+  transform: scale(1.025);
 }
 
 .image-link:hover ~ img.desaturate{
-/*  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);*/
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.image-container:hover .bottom-border{
+  opacity: 1;
 }
 
 .image-container{
@@ -231,7 +245,7 @@ filter: grayscale(100%);
 .largescreen-image{
   display: block;
 
-  @include media-query($on-palm){
+  @include media-query($on-laptop){
     display: none;
   }
 }
@@ -239,7 +253,7 @@ filter: grayscale(100%);
 .smallscreen-image{
   display: none;
 
-  @include media-query($on-palm){
+  @include media-query($on-laptop){
     display: block;
   }
 }
@@ -290,6 +304,8 @@ filter: grayscale(100%);
 }
 
 /* Hover animations */
+
+
 
 /* Bob */
 @-webkit-keyframes hvr-bob {
@@ -378,7 +394,14 @@ filter: grayscale(100%);
             animation: fadein 1s;
 }
 
-
+.fadein-delay {
+    animation-delay: 2s;
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
+}
 
 @keyframes fadein {
     from { opacity: 0; }

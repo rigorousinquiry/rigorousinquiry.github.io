@@ -4,7 +4,7 @@ title:  "the arrivals pt. 1"
 subtitle: "the unboxing"
 date: 2015-12-01
 categories: style
-color: b0340e
+color: 4F4C29
 author: Jason
 ---
 

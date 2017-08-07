@@ -20,4 +20,4 @@ an open-source style blog
 
 See existing posts for examples. 
 
-There cannot be more than one post per day. If someone has already submitted a post for today, wait until tomorrow.
+Due to our naming conventions, here cannot be more than one post per day. This may be changed eventually, but for now there's not enough publishing traffic to warrant such a change. If someone has already submitted a post for today, wait until tomorrow.
