@@ -1,6 +1,13 @@
-
-##IF YOU CAN'T HANDLE THE HEAT ...
-#### Jason Zhao, 06 August 2017
+---
+layout: post
+title:  "If You Can't Handle the Heat ..."
+subtitle: ""
+date:   2017-08-06
+categories: style
+coverphoto: true
+color: "b0340e"
+author: Jason
+---
 
 
 Until now, the furthest south I've ever lived is Chicago.
